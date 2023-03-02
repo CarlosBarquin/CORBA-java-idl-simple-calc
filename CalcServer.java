@@ -1,4 +1,3 @@
-
 import CalcApp.*;
 import CalcApp.CalcPackage.DivisionByZero;
 
@@ -34,6 +33,23 @@ class CalcImpl extends CalcPOA {
     public float sub(float a, float b) {
         return a - b;
     }
+
+    @Override
+    public Complex complexSum(Complex a, Complex b) {
+        Complex result = new Complex();
+        result.real = a.real + b.real;
+        result.imaginary = a.imaginary + b.imaginary;
+        return result;
+    }
+
+    @Override
+    public Complex complexSub(Complex a, Complex b) {
+        Complex result = new Complex();
+        result.real = a.real - b.real;
+        result.imaginary = a.imaginary - b.imaginary;
+        return result;
+    }
+
     private ORB orb;
 
     public void setORB(ORB orb_val) {
@@ -53,16 +69,17 @@ public class CalcServer {
             rootpoa.the_POAManager().activate();
 
             // create servant and register it with the ORB
-            CalcImpl helloImpl = new CalcImpl();
-            helloImpl.setORB(orb);
+            CalcImpl calcImpl = new CalcImpl();
+            calcImpl.setORB(orb);
 
             // get object reference from the servant
-            org.omg.CORBA.Object ref = rootpoa.servant_to_reference(helloImpl);
+            org.omg.CORBA.Object ref = rootpoa.servant_to_reference(calcImpl);
             Calc href = CalcHelper.narrow(ref);
 
             // get the root naming context
             // NameService invokes the name service
             org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
+
             // Use NamingContextExt which is part of the Interoperable
             // Naming Service (INS) specification.
             NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
@@ -85,3 +102,4 @@ public class CalcServer {
 
     }
 }
+

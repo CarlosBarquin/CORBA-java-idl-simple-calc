@@ -1,12 +1,20 @@
 module CalcApp
 {
-	interface Calc
-	{
-		exception DivisionByZero {};
+    struct Complex {
+        float real;
+        float imaginary;
+    };
 
-		float sum(in float a, in float b);
-		float div(in float a, in float b) raises (DivisionByZero);
-		float mul(in float a, in float b);
-		float sub(in float a, in float b);
-	};
+    interface Calc
+    {
+        exception DivisionByZero {};
+
+        float sum(in float a, in float b);
+        float div(in float a, in float b) raises (DivisionByZero);
+        float mul(in float a, in float b);
+        float sub(in float a, in float b);
+        Complex complexSum(in Complex a, in Complex b);
+        Complex complexSub(in Complex a, in Complex b);
+    };
 };
+

@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -32,21 +31,20 @@ public class CalcClient {
             String name = "Calc";
             calcImpl = CalcHelper.narrow(ncRef.resolve_str(name));
 
-//			System.out.println(calcImpl);
-
-
             while (true) {
                 out.println("1. Sum");
                 out.println("2. Sub");
                 out.println("3. Mul");
                 out.println("4. Div");
-                out.println("5. exit");
+                out.println("5. Complex Sum");
+                out.println("6. Complex Sub");
+                out.println("7. exit");
                 out.println("--");
                 out.println("choice: ");
 
                 try {
                     String opt = br.readLine();
-                    if (opt.equals("5")) {
+                    if (opt.equals("7")) {
                         break;
                     } else if (opt.equals("1")) {
                         out.println("a+b= " + calcImpl.sum(getFloat("a"), getFloat("b")));
@@ -60,18 +58,32 @@ public class CalcClient {
                         } catch (DivisionByZero de) {
                             out.println("Division by zero!!!");
                         }
+                    } else if (opt.equals("5")) {
+                        Complex a = new Complex();
+                        Complex b = new Complex();
+                        a.real = getFloat("a.real");
+                        a.imaginary = getFloat("a.imaginary");
+                        b.real = getFloat("b.real");
+                        b.imaginary = getFloat("b.imaginary");
+                        Complex result = calcImpl.complexSum(a, b);
+                        out.println("a + b = " + result.real + " + " + result.imaginary + "i");
+                    } else if (opt.equals("6")) {
+                        Complex a = new Complex();
+                        Complex b = new Complex();
+                        a.real = getFloat("a.real");
+                        a.imaginary = getFloat("a.imaginary");
+                        b.real = getFloat("b.real");
+                        b.imaginary = getFloat("b.imaginary");
+                        Complex result = calcImpl.complexSub(a, b);
+                        out.println("a - b = " + result.real + " + " + result.imaginary + "i");
                     }
-                } catch (Exception e) {
-                    out.println("===");
-                    out.println("Error with numbers");
-                    out.println("===");
+                } catch (IOException ex) {
+                    out.println("IO Exception");
                 }
-                out.println("");
-
             }
-            //calcImpl.shutdown();
+
         } catch (Exception e) {
-            System.out.println("ERROR : " + e);
+            out.println("ERROR : " + e);
             e.printStackTrace(System.out);
         }
     }
@@ -81,3 +93,10 @@ public class CalcClient {
         return Float.parseFloat(br.readLine());
     }
 }
+
+
+
+
+
+
+

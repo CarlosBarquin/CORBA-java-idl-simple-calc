@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/core/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/core/src/main/java-templates" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/ami/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/any/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/appserver/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/appserver/src/test/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/arrays/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/bank/concurrency/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/bidir/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/concurrency/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/corbaloc/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/dds/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/dii/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/dynany/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/events/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/grid/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/hello/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/imr/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/interceptors/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/maven/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/miop/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/mtclient/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/notification/office/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/notification/whiteboard/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/outparam/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/policies/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/sas/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/ssl/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/tao_imr/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/unions/src/main/java" />
+          <root url="file://$USER_HOME$/OneDrive/Escritorio/jacorb-3.9/demo/value/src/main/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
